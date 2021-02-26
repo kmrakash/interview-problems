@@ -4,12 +4,11 @@ using namespace std;
 
 /*
     ! Efficient Approach
-    * Algorith: Step 1: Iterate from second last index and get a index_1 with a element lesser than next right element
-    *           Step 2: If index_1 < 0 , every value is in decreasing order just reverse and return
-    *           Step 3: If index_1 >= 0 ,Iterate from last and get a index_2 with a element greater than index_1 value
-    *           Step 4: Swap(index_1 , index_2)
-    *           Step 5: reverse every element to right of index_1
-    
+    * Algorith: Step 1: Find the largest index k such that nums[k] < nums[k + 1]. If no such index exists, just reverse nums and done.
+    *           Step 2:Find the largest index l > k such that nums[k] < nums[l].
+    *           Step 3: Swap nums[k] and nums[l].
+    *           Step 4: Reverse the sub-array nums[k + 1:].     
+
     ? Time Complexity : O(N)
     ? Space Complexity :  O(1)
 
