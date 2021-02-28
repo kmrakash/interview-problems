@@ -4,8 +4,10 @@ using namespace std;
 
 int getUnique(int arr[], int n)
 {
-    if (n <= 1)
+    if (n <= 0)
         return -1;
+    if (n == 1)
+        return arr[0];
 
     int ans = 0;
     for (int i = 0; i < n; i++)

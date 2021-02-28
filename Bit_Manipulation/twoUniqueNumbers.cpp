@@ -36,16 +36,16 @@ void UniqueNumbers(int arr[], int n)
     {
         res = res ^ arr[i];
     }
-    deb(res);
+    // deb(res);
     int last_bit = getLastBit(res);
-    deb(last_bit);
+    // deb(last_bit);
     int a = 0;
     for (int i = 0; i < n; i++)
     {
         if (setBit(arr[i], last_bit))
         {
             a ^= arr[i];
-            deb(arr[i]);
+            //deb(arr[i]);
         }
     }
     int b = res ^ a;

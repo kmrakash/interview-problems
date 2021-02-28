@@ -11,7 +11,7 @@ int UniqueNumber(int arr[], int n)
 
     int mask = 1;
     int count = 0;
-    for (int m = 0; m < 64; m++)
+    for (int m = 0; m < 64; m++) // O(N)
     {
         count = 0;
         mask = 1 << m;
@@ -23,7 +23,7 @@ int UniqueNumber(int arr[], int n)
     }
     int ans = 0;
     int p = 1;
-    for (int i = 0; i < 64; i++)
+    for (int i = 0; i < 64; i++) // Constant Time
     {
         ans += (bits[i] * p);
         p *= 2;

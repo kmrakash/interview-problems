@@ -59,7 +59,7 @@ int clearBits(int n, int i)
  *          Creation of mask :
  *                           a = 1 1 1 1 0 0 0 0
  *                           b = 0 0 0 0 0 0 0 1
- *                        mask = 1 1 1 1 0 0 0 0 (a OR b)
+ *                        mask = 1 1 1 1 0 0 0 1 (a OR b)
  **/
 int clearBitsRangeIToJ(int n, int i, int j)
 {

@@ -28,6 +28,7 @@ int countBit2(int n)
 
 // ! Most Efficient
 // * Does not fail in -1 case
+// ? Basic idea here is n & n-1 convert the right most set bit to 0
 int countBit3(int n)
 {
     int count = 0;
